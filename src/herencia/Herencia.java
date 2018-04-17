@@ -5,6 +5,10 @@
  */
 package herencia;
 
+import clases_abstractas.Auto;
+import clases_abstractas.Vehiculo;
+import com.sun.org.apache.bcel.internal.generic.AASTORE;
+
 /**
  *
  * @author cespe
@@ -20,11 +24,17 @@ public class Herencia {
         System.out.println(a.nombre);
         a.hablar();*/
         
-        Alumno_especial ae =new Alumno_especial();
+        /*Alumno_especial ae =new Alumno_especial();
         
         ae.hablar();
-        ae.andar();
+        ae.andar();*/
+       
+        Vehiculo v=new Auto();
+       // v.mantenimiento();
         
+        Auto auto=new Auto();
+        auto.mantenimiento();
+        auto.andar();
     }
     
 }
